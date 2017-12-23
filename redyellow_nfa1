@@ -1,0 +1,13 @@
+digraph G{
+node [shape = circle]
+
+ q0 [style = filled];
+ q2 [shape = doublecircle];
+
+{"q1"} -> {"q0"} [label = "Ø"]
+{"q1"} -> {"q0"} [label = "red"]
+{"q0"} -> {"q2"} [label = "red"]
+{"q0"} -> {"q0"} [label = "Ø"]
+{"q0"} -> {"q1"} [label = "yellow"]
+{"q1"} -> {"q1"} [label = "yellow"]
+}

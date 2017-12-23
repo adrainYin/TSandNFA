@@ -1,0 +1,8 @@
+digraph G{
+ "sg" [style = filled];
+{"sr"} -> {"sry"} [label = "true"]
+{"sry"} -> {"sg"} [label = "true"]
+{"sg"} -> {"sy"} [label = "true"]
+{"sg"} -> {"sr"} [label = "true"]
+{"sy"} -> {"sr"} [label = "true"]
+}
