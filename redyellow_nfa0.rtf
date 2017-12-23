@@ -1,0 +1,13 @@
+state={q0,q1,q2}
+alphabet={red,yellow,redyellow,Ø}
+transition=
+(q1,Ø,q0)
+(q1,red,q0)
+(q0,red,q2)
+(q0,Ø,q0)
+(q0,yellow,q1)
+(q1,yellow,q1)
+(q1,redyellow,q1)
+end
+init_state={q0}
+final_state={q2}

@@ -1,0 +1,22 @@
+digraph G{
+node [shape = circle]
+
+ q0 [style = filled];
+ q3 [shape = doublecircle];
+
+{"q0"} -> {"q0"} [label = "Ø"]
+{"q0"} -> {"q0"} [label = "b"]
+{"q0"} -> {"q0"} [label = "c"]
+{"q0"} -> {"q0"} [label = "bc"]
+{"q0"} -> {"q1"} [label = "a"]
+{"q1"} -> {"q1"} [label = "a"]
+{"q1"} -> {"q1"} [label = "Ø"]
+{"q1"} -> {"q3"} [label = "c"]
+{"q1"} -> {"q2"} [label = "b"]
+{"q1"} -> {"q2"} [label = "ab"]
+{"q2"} -> {"q1"} [label = "b"]
+{"q2"} -> {"q1"} [label = "ab"]
+{"q2"} -> {"q2"} [label = "a"]
+{"q2"} -> {"q2"} [label = "Ø"]
+{"q2"} -> {"q0"} [label = "c"]
+}

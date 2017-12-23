@@ -1,0 +1,33 @@
+state={n1 n2,w1 n2,n1 w2,c1 n2,w1 w2,n1 c2,c1 w2,w1 c2,c1 c2}
+act={rel,req1,req2,enter1,enter2}
+init_state={n1 n2}
+ap={crit1,crit2}
+transition=
+(n1 n2,req1,w1 n2)
+(n1 n2,req2,n1 w2)
+(w1 n2,enter1,c1 n2)
+(w1 n2,req2,w1 w2)
+(n1 w2,enter2,n1 c2)
+(n1 w2,req1,w1 w2)
+(w1 w2,enter1,c1 w2)
+(w1 w2,enter2,w1 c2)
+(c1 n2,rel,n1 n2)
+(c1 n2,req2,c1 w2)
+(c1 w2,rel,n1 w2)
+(w1 c2,rel,w1 n2)
+(n1 c2,req1,w1 c2)
+(n1 c2,rel,n1 n2)
+(c1 w2,enter2,c1 c2)
+(w1 c2,enter1,c1 c2)
+(c1 c2,rel,c1 n2)
+(c1 c2,rel,n1 c2)
+label=
+L(n1 n2)={Ø}
+L(w1 n2)={Ø}
+L(n1 w2)={Ø}
+L(c1 n2)={crit1}
+L(w1 w2)={Ø}
+L(n1 c2)={crit2}
+L(c1 w2)={crit1}
+L(w1 c2)={crit2}
+L(c1 c2)={crit1crit2}

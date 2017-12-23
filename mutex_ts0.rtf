@@ -1,0 +1,28 @@
+state={n1 n2 y=1,w1 n2 y=1,n1 w2 y=1,c1 n2 y=0,w1 w2 y=1,n1 c2 y=0,c1 w2 y=0,w1 c2 y=0}
+act={rel,req1,req2,enter1,enter2}
+init_state={n1 n2 y=1}
+ap={crit1,crit2}
+transition=
+(n1 n2 y=1,req1,w1 n2 y=1)
+(n1 n2 y=1,req2,n1 w2 y=1)
+(w1 n2 y=1,enter1,c1 n2 y=0)
+(w1 n2 y=1,req2,w1 w2 y=1)
+(n1 w2 y=1,enter2,n1 c2 y=0)
+(n1 n2 y=1,req1,w1 w2 y=1)
+(w1 w2 y=1,enter1,c1 w2 y=0)
+(w1 w2 y=1,enter2,w1 c2 y=0)
+(c1 n2 y=0,rel,n1 n2 y=1)
+(c1 n2 y=0,req2,c1 w2 y=0)
+(c1 w2 y=0,rel,n1 w2 y=1)
+(w1 c2 y=0,rel,w1 n2 y=1)
+(n1 c2 y=0,req1,w1 c2 y=0)
+(n1 c2 y=0,rel,n1 n2 y=1)
+label=
+L(n1 n2 y=1)={Ø}
+L(w1 n2 y=1)={Ø}
+L(n1 w2 y=1)={Ø}
+L(c1 n2 y=0)={crit1}
+L(w1 w2 y=1)={Ø}
+L(n1 c2 y=0)={crit2}
+L(c1 w2 y=0)={crit1}
+L(w1 c2 y=0)={crit2}

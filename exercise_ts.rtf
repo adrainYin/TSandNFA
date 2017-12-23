@@ -1,0 +1,17 @@
+state={s1,s2,s3,s4}
+act={α,β,γ}
+init_state={s1}
+ap={a,b,c}
+transition=
+(s1,α,s2)
+(s2,β,s2)
+(s2,γ,s3)
+(s3,α,s3)
+(s3,γ,s4)
+(s4,γ,s3)
+(s4,β,s1)
+label=
+L(s1)={Ø}
+L(s2)={bc}
+L(s3)={a}
+L(s4)={b}

@@ -1,0 +1,10 @@
+digraph G{
+ "s1" [style = filled];
+{"s1"} -> {"s2"} [label = "α"]
+{"s2"} -> {"s2"} [label = "β"]
+{"s2"} -> {"s3"} [label = "γ"]
+{"s3"} -> {"s3"} [label = "α"]
+{"s3"} -> {"s4"} [label = "γ"]
+{"s4"} -> {"s3"} [label = "γ"]
+{"s4"} -> {"s1"} [label = "β"]
+}
