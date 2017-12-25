@@ -9,7 +9,7 @@ public class CheckInvariant {
 
     public static ArrayList<String> counterExample = new ArrayList<>();
 
-    private static String post = null;
+    private static String post = null; //post是要访问的下一个状态结点
     private List<String> R = new ArrayList<>();
     private Stack<String> U = new Stack<>();
 
